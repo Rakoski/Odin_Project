@@ -1,0 +1,33 @@
+.BoxOne {
+    background-color: red;
+    padding: 100px;
+
+    height: 100px;
+    width: 10px;
+
+    border: 20px solid magenta;
+
+    margin: 0 auto;
+    /* By using "0 auto" we can center boxes in the middle of the page */
+    /* Margin is the best way to space two things from eachother */
+
+    box-sizing: border-box;
+    /* Border-box/box-sizing on the other hand is meant to actually mean the
+    pixels you use, so it makes spacing much easier*/
+}
+
+.BoxTwo {
+    background-color: blue;
+    padding: 100px;
+    
+    height: 100px;
+    width: 10px;
+
+    border: 20px solid green;
+
+    margin: -10px;
+    /* By using negative values on margin, we can make boxes overlap */
+    /* Margin is the best way to space two things from eachother  */
+
+    box-sizing: border-box;
+}

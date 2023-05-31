@@ -1,0 +1,21 @@
+  /* rule 1 */
+  /* assim o texto continua vermelho */
+
+/* .subsection {
+    color: blue;
+  } */
+
+ /* mas assim fica azul, pois agora ta pegando pelo id: */
+#subsection.list {
+    background-color: yellow;
+    color: blue;
+}
+
+  /*  both rules are using only class selectors, 
+  but rule 2 is more specific because it is using more class selectors, 
+  so the color: red; declaration would take precedence. */
+
+  /* rule 2 */
+#subsection.main .list {
+    color: red;
+  }
