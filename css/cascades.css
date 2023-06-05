@@ -5,7 +5,7 @@
     color: blue;
   } */
 
- /* mas assim fica azul, pois agora ta pegando pelo id: */
+ /* mas assim fica azul, pois agora ta pegando pelo id #: */
 #subsection.list {
     background-color: yellow;
     color: blue;
@@ -19,3 +19,55 @@
 #subsection.main .list {
     color: red;
   }
+
+  /* In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector than the other. 
+  The cascade then checks the amounts of each selector type. Both rules only have one ID selector, 
+  but rule 2 has more class selectors, so rule 2 has a higher specificity! */
+
+/* Not everything adds to specificity
+When comparing selectors, you may come across special symbols for the universal selector (*) as well as combinators (+, ~, >, and an empty space). 
+These symbols do not add any specificity in and of themselves. */
+
+/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class .second-class {
+  font-size: 24px;
+}
+
+/* Here both rule 1 and rule 2 have the same specificity.
+ Rule 1 uses a chaining selector (no space) and rule 2 uses a descendant combinator (the empty space). 
+ But both rules have two classes and the combinator symbol itself does not add to the specificity. */
+
+ /* DESCENDANT COMBINATOR = EMPTY SPACE // CHAINING SELECTOR = NO SPACE */
+
+ /* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class > .second-class {
+  font-size: 24px;
+}
+
+/* In this example below, rule 2 would have higher specificity and the orange value would take precedence for this element. 
+Rule 2 uses a type selector, which has the lowest specificity value. 
+But rule 1 uses the universal selector (*) which has no specificity value. */
+
+/* rule 1 */
+* {
+  color: black;
+}
+
+/* rule 2 */
+h1 {
+  color: orange;
+}
+
+
+  
+
