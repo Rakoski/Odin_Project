@@ -1,0 +1,23 @@
+.container {
+    border: 5px solid rgb(139, 120, 120);
+    display: flex;
+    height: 55%;
+    align-items: start;
+    justify-content: left;
+    gap: 5px;
+    /* A flex container is any element that has display: flex on it.
+     A flex item is any element that lives directly inside of a flex container. */
+
+}
+
+.home {
+     /* flex: 1;  */
+     /* width: 33.333%;  */
+     align-self: safe;
+}
+
+.logout {
+     align-self: safe;
+     /* flex: 1; */
+} 
+
