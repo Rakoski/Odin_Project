@@ -1,0 +1,105 @@
+.header {
+  background-color: #1f2937;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  margin-right: 227px;
+  height: 400px;
+  width: 500px;
+  /* A flex container is any element that has display: flex on it.
+   A flex item is any element that lives directly inside of a flex container. */
+
+}
+
+.Main-text {
+  color: white;
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+.small-text {
+  color: white;
+  font-weight: lighter;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+} 
+
+button.sign-up-button {
+  width: 100px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+button.sign-up-button:hover {
+  background-color: #2980b9;
+}
+
+button.sign-up-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+.image {
+width: 500px;
+height: 300px;
+}
+
+.navigation-bar {
+margin: 10 10px;
+background-color: #1f2937;
+display: flex;
+}
+
+.logo-container {
+border: none; /* Border in case of container fix needed */
+flex: 1; /* Take up remaining space */
+max-width: 50%; /* Limit width if needed */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.nav-container {
+width: 1000px;
+text-align: center;
+border: none; /* Border in case of container fix needed */
+justify-content: space-evenly;
+/* Add any other styles you need */
+}
+
+a {
+color: #cccfd4;
+list-style-type: none;
+display: inline-block;
+padding-right: 0%;
+width: 75spx;
+margin-right: 0%;
+background: #1f2937;
+}
+
+.link1 {
+padding-left: 1.5%;
+}
+
+.link2 {
+padding-left: 3%;
+padding-right: 3%;
+}
+
+.link3 {
+padding-right: 30%;
+}
